@@ -1,0 +1,48 @@
+#watchApple {
+  .watchApple {
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 0;
+
+    &--text {
+      padding-top: 20px;
+      h1 {
+        font-weight: 700;
+        font-size: 65px;
+        color: white;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 30px;
+        color: white;
+      }
+    }
+
+    &--videos {
+      position: relative;
+
+      img{
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        width: 100%;
+      }
+      &__film {
+        z-index: -1;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        max-width: 63%;
+        max-height: 47%;
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+
+  }
+}

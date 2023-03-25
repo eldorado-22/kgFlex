@@ -1,0 +1,20 @@
+#createKids {
+  .createKids {
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 0;
+
+    &--text {
+      h1 {
+        font-weight: 700;
+        font-size: 65px;
+        color: white;
+      }
+      p{
+        font-weight: 400;
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}

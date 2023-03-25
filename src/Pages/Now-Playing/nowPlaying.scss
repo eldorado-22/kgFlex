@@ -1,0 +1,74 @@
+#nowPlaying {
+
+  .nowPlaying--search {
+    display: flex;
+    align-items: center;
+    padding-top: 9%;
+    justify-content: center;
+
+    input {
+      font-family: "Maiandra GD", sans-serif;
+
+      padding: 13px 20px;
+      background: rgba(75, 75, 75, 0.76);
+      color: white;
+      border: none;
+      outline: none;
+      border-radius: 7px;
+      width: 80%;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.99);
+      }
+    }
+
+    &__getBtn {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 23px;
+      font-family: "Maiandra GD", sans-serif;
+      margin: 0 10px;
+      cursor: pointer;
+      padding: 10px 20px;
+      color: white;
+      background: red;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+
+      &__play {
+        font-size: 10px;
+      }
+    }
+
+  }
+
+
+  .nowPlaying--page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 7px 22px;
+      font-size: 20px;
+      font-weight: 450;
+      transition-duration: 0.4s;
+      border-radius: 7px;
+
+
+      &:hover {
+        background-color: white;
+        color: red;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    p {
+      padding: 0 20px;
+    }
+  }
+}

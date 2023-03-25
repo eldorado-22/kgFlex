@@ -1,0 +1,49 @@
+#actorsMovies {
+  margin: 6% 0;
+
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+  }
+
+
+  .actorsMovies {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin: 20px 0;
+
+    &--scroll {
+      h3 {
+        color: white;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      color: white;
+
+    }
+
+    img {
+      border-radius: 10px;
+      max-width: none;
+      transition: .5s;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: .5s;
+        filter: drop-shadow(1px 2px 6px red);
+
+      }
+    }
+
+    &--scroll {
+
+      padding: 0 20px;
+    }
+  }
+}

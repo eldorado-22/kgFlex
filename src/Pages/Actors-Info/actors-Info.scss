@@ -1,0 +1,71 @@
+#actorsBio {
+  backdrop-filter: blur(5px);
+  padding: 6% 0;
+
+  .actorsBio {
+    display: flex;
+    padding: 30px 0;
+    align-items: start;
+
+    img {
+      border-radius: 20px;
+      height: 50%;
+      //filter: drop-shadow(9px 12px 50px rgba(231, 231, 232, 0.18));
+      border: 7px solid rgba(229, 11, 11, 0.98);
+    }
+
+    &--text {
+      padding: 0 5%;
+
+      h1 {
+        color: red;
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-family: "Maiandra GD", sans-serif;
+        padding-bottom: 19px;
+      }
+
+      h5 {
+        font-weight: 700;
+        font-size: 27px;
+        padding: 14px 0;
+        font-family: "Maiandra GD", sans-serif;
+        color: red;
+
+        span {
+          font-weight: 500;
+          color: white;
+          font-size: 25px;
+          font-family: "Maiandra GD", sans-serif;
+        }
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 20px;
+        color: red;
+        font-family: "Maiandra GD", sans-serif;
+
+
+        span {
+          color: white;
+          font-weight: 500;
+        }
+      }
+
+      &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h4 {
+          font-weight: 700;
+          font-size: 20px;
+          padding-top: 10px;
+        }
+
+      }
+
+
+    }
+  }
+}

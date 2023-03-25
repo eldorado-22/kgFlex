@@ -1,0 +1,180 @@
+#header {
+  position: fixed;
+  width: 105%;
+  z-index: 999;
+  background: transparent;
+  padding: 25px 0;
+
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      color: red;
+      font-family: "Maiandra GD", sans-serif;
+
+      //text-decoration: none;
+    }
+
+    &--search {
+      width: 40%;
+      height: 400px;
+      position: absolute;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.76);
+      top: 200px;
+      //left: 30%;
+      animation: 2s animate ease-out;
+
+      @keyframes animate {
+        0% {
+          transform: translateY(-200px);
+          transition: .5s;
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        170% {
+          transform: scale(1.1);
+        }
+
+      }
+
+      &__exit {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        h2 {
+          font-weight: 700;
+          font-size: 50px;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+        }
+
+        button {
+          //background: red;
+          //padding: 7px 20px;
+          border-radius: 5px;
+          font-weight: 500;
+          font-size: 70px;
+          color: white;
+          padding-left: 30%;
+          //animation: ;
+
+        }
+      }
+
+
+      &__inputS {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+
+
+        input {
+          margin: 10px 0;
+          border-radius: 5px;
+
+          width: 70%;
+        }
+      }
+
+      &__password {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+          color: white;
+          margin: 0 50px;
+        }
+
+        button {
+          margin: 0 50px;
+          background: red;
+          padding: 10px 30px;
+          font-weight: 500;
+          font-size: 20px;
+          border-radius: 5px;
+          color: white;
+        }
+      }
+    }
+
+    &--navbar {
+
+      a {
+        font-weight: 500;
+        font-size: 22px;
+        color: #fff;
+        text-decoration: none;
+        padding: 0 50px;
+        font-family: "Maiandra GD", sans-serif;
+
+
+        &:hover {
+          color: red;
+          transition: .6s;
+        }
+      }
+    }
+
+
+    &--language {
+      background: transparent;
+      color: white;
+      outline: none;
+
+      select {
+        padding: 10px 10px;
+        color: black;
+        outline: none;
+
+      }
+
+    }
+
+    &--signUp {
+      button {
+        padding: 10px 30px;
+        border-radius: 5px;
+        background: red;
+        border: 2px solid red;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          color: #ffffff;
+          transition: .6s;
+          background: transparent;
+        }
+      }
+
+
+      &__icon {
+        font-size: 20px;
+        color: white;
+      }
+
+      input {
+        width: 0;
+        height: 15px;
+        border: none;
+        outline: none;
+        background: #ffffff;
+        transition: .5s;
+        color: black;
+        border-radius: 10px;
+        padding: 10px 0;
+
+      }
+    }
+  }
+}

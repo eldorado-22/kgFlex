@@ -1,0 +1,17 @@
+#movieCard {
+  .movieCard {
+    img {
+      padding: 20px 0;
+      object-fit: cover;
+      transition: .5s;
+
+
+      &:hover{
+        transform: scale(1.1);
+        transition: .5s;
+        filter: drop-shadow(3px 4px 10px red);
+        padding: 20px 0;
+      }
+    }
+  }
+}
