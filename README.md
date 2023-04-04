@@ -13,7 +13,7 @@
 <br/>
 
 <h1> Why "KG FLEX" ? </h1>
-<h2> Because, "KG FLEX" is -> This name was coined from my classmate "Argen" 👨🏻‍💻 </h2>
+<h2> Because, "KG FLEX" is -> This name was coined from my classmate <br/> "Argen" 👨🏻‍💻 </h2>
 <br/>
 <h1> I'm Front-End developer 👨🏻‍💻✨</h1>
 <br/>
