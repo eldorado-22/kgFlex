@@ -1,8 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './hero.scss'
 import {BsFillPlayFill} from "react-icons/bs";
-import axios from "axios";
-import {APIKEY} from "../../ApiKey/ApiKey";
 import {useNavigate} from "react-router-dom";
 import Home from "../../Pages/Home/home";
 import EnjoyTv from "../EnjoyTV/enjoyTV";
@@ -40,7 +38,6 @@ const Hero = () => {
                               <BsFillPlayFill className="hero--global__getBtn--play"/>
                           </button>
                       </div>
-
                   </div>
 
               </div>

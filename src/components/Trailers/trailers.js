@@ -4,7 +4,6 @@ import {APIKEY} from "../../ApiKey/ApiKey";
 import './trailers.scss'
 
 const Trailers = ({movieId}) => {
-    // https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=<<api_key>>&language=en-US
 
     const [videos, setVideos] = useState([])
     const getVideos = async (id, key) => {
@@ -33,7 +32,7 @@ const Trailers = ({movieId}) => {
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowFullScreen>
                                 </iframe>
-                                <h3>{el.name}</h3>
+                                <h3 style={{color: "white"}}>{el.name}</h3>
                             </div>
                         ))
                     }
