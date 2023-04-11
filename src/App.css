@@ -60,7 +60,6 @@ video {
     padding: 9% 0;
     display: grid;
     grid-template-columns: auto auto auto;
-    /*flex-wrap: wrap;*/
     align-items: center;
 }
 
@@ -68,7 +67,6 @@ video {
     padding: 9% 0;
     display: grid;
     grid-template-columns: auto auto auto;
-    /*flex-wrap: wrap;*/
     align-items: center;
 }
 

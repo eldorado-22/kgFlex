@@ -49,10 +49,10 @@
     justify-content: center;
 
     button {
-      background-color: red; /* Set background color */
-      color: white; /* Set text color */
-      border: none; /* Remove border */
-      padding: 7px 22px; /* Set padding */
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 7px 22px;
       font-size: 20px;
       font-weight: 450;
       transition-duration: 0.4s;
@@ -60,8 +60,8 @@
 
 
       &:hover {
-        background-color: white; /* Change background color on hover */
-        color: red; /* Change text color on hover */
+        background-color: white;
+        color: red;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       }
     }

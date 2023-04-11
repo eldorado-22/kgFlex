@@ -5,14 +5,16 @@ import './header.scss'
 import {FiSearch} from "react-icons/fi";
 import {LanguageContext} from "../../Context";
 import {BsFillPlayFill} from "react-icons/bs";
+import BurgerMenu from "../BurgerMenu/burger";
 
-// import kg from './../../assets/img/kgz.png'
 
 function NavScrollExample({setMode, mode}) {
     const [search, setSearch] = useState(true)
     const [scroll, setScroll] = useState(true)
     const {setLanguage} = useContext(LanguageContext)
     const [modal, setModal] = useState(false)
+    const [burger, setBurger] = useState(false)
+
 
     const toScroll = () => {
         setScroll(window.scrollY)
@@ -24,11 +26,9 @@ function NavScrollExample({setMode, mode}) {
 
     return (
         <header style={{
-            backdropFilter: scroll > 40 ? 'blur(20px)' : '',
-            // background: scroll > 60 ? "black" : ''
+            backdropFilter: scroll > 40 ? 'blur(20px)' : ''
         }} id="header">
             <div className="container">
-
                 <div className="header d-flex">
                     <Link to={"/"}>
                         <h1>KG FLEX</h1>
@@ -68,11 +68,10 @@ function NavScrollExample({setMode, mode}) {
                             <h2>Sign UP</h2>
                             <button onClick={() => {
                                 setModal(false)
-                            }} className="popular--search__getBtn">&times;
+                            }} className="popular--search__getBtn">
+                                &times;
                             </button>
                         </div>
-
-
                         <div className="header--search__inputS">
                             <input type="email" placeholder="Email"/>
                             <input type="text" placeholder="Name"/>
@@ -82,8 +81,9 @@ function NavScrollExample({setMode, mode}) {
                             <a href="#">Forgot Password?</a>
                             <button type="submit">Submit</button>
                         </div>
-
                     </div>
+
+                    <BurgerMenu burger={burger} setBurger={setBurger}/>
                 </div>
             </div>
         </header>

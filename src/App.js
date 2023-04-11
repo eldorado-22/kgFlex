@@ -24,8 +24,8 @@ function App() {
                 <Route path={"/search/:value"} element={<Search/>}/>
                 <Route getDark={setMode} mode={mode} path={"/popular"} element={<Popular/>}/>
                 <Route getDark={setMode} mode={mode} path={"/top-rated"} element={<TopRated/>}/>
-                <Route getDark={setMode} mode={mode} path={"/movies/movies-info/:movieId"} element={<DetailPage/>}/>
                 <Route getDrsk={setMode} mode={mode} path={"/now-playing"} element={<NowPlaying/>}/>
+                <Route getDark={setMode} mode={mode} path={"/movies/movies-info/:movieId"} element={<DetailPage/>}/>
                 <Route path={"/movies/actor-info/:actorId"} element={<ActorsInfo/>}/>
             </Routes>
 
