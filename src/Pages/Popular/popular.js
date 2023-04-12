@@ -50,9 +50,11 @@ const Popular = ({mode}) => {
                 </div>
 
                 <div className="popular">
+
                     {
                         popular.map(el => <MovieCard el={el}/>)
                     }
+
                 </div>
 
                 <div className="popular--page">
