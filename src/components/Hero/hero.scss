@@ -1,8 +1,7 @@
 #hero {
-  background: url("./../../assets/img/back.jpg") no-repeat center/cover;
+  background: url("./../../assets/img/bg-hero.jpg") no-repeat center/cover fixed;
   min-height: -20vh;
   object-fit: cover;
-  //position: relative;
 
   &:before {
     content: "";
